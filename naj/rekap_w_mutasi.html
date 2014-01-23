@@ -131,6 +131,7 @@
     <script>
         $(document).ready(function() {
             $('button.mutasi-p').click(function() {
+                $('table tr.processed').removeClass('processed');
                 $(this).parents('tr').addClass('processed');
                 $('form#mutasi-p').show(500);
             });
