@@ -14,40 +14,131 @@
             table thead {
                 background: lightgray;
             }
+            table tfoot {
+                background: whitesmoke;
+                text-align: right;
+            }
+            button {
+                border: 1px solid lightgray;
+                border-radius: 4px;
+                color: #333;
+            }
+            button.main {
+                background: rgb(78, 105, 162);
+                font-weight: normal;
+                color: white;
+                border: 1px solid lightblue;
+            }
+            .processed {
+                color: maroon;
+                background: palegoldenrod;
+            }
         </style>
     </head>
     <body>
-        <form>
+        <form id="mutasi-p" style="display: none">
             <table>
                 <thead>
-                    <tr>
-                        <th>Kolom 1</th>
-                        <th>Kolom 2</th>
-                        <th>Kolom ...</th>
-                        <th>Kolom n</th>
-                        <th>Mutasi</th>
-                    </tr>
+                    <td colspan="2">
+                        Form Pindah Unit
+                    </td>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Data kolom 1</td>
-                        <td>Data kolom 2</td>
-                        <td>Data kolom ...</td>
-                        <td>Data kolom n</td>
-                        <td style="text-align: center">
-                            <button type="button" title="Rusak - Buang">
-                                R
-                            </button>
-                            <button type="button" title="Jual">
-                                J
-                            </button>
-                            <button type="button" title="Pindah Unit">
-                                P
-                            </button>
+                        <td class="label">
+                            <label>Unit Asal</label>
+                        </td>
+                        <td>
+                            :
+                            <select>
+                                <option value="0">Pilih:</option>
+                                <option value="">Q</option>
+                                <option value="" selected>CG</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label>Unit Tujuan</label>
+                        </td>
+                        <td>
+                            :
+                            <select>
+                                <option value="0">Pilih:</option>
+                                <option value="">Q</option>
+                                <option value="">CG</option>
+                            </select>
                         </td>
                     </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <button type="button" class="main">Pindah</button>
+                            <button type="button">Batal</button>
+                        </td>
+                    </tr>
+                </tfoot>
             </table>
         </form>
+        <br />
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Kolom 1</th>
+                    <th>Kolom 2</th>
+                    <th>Kolom ...</th>
+                    <th>Kolom n</th>
+                    <th>Mutasi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data kolom 1</td>
+                    <td>Data kolom 2</td>
+                    <td>Data kolom ...</td>
+                    <td>Data kolom n</td>
+                    <td style="text-align: center">
+                        <button class="mutasi-r" type="button"
+                                title="Rusak - Buang">R</button>
+                        <button class="mutasi-j" type="button"
+                                title="Jual">J</button>
+                        <button class="mutasi-p" type="button"
+                                title="Pindah Unit">P</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Data kolom 1</td>
+                    <td>Data kolom 2</td>
+                    <td>Data kolom ...</td>
+                    <td>Data kolom n</td>
+                    <td style="text-align: center">
+                        <button class="mutasi-r" type="button"
+                                title="Rusak - Buang">R</button>
+                        <button class="mutasi-j" type="button"
+                                title="Jual">J</button>
+                        <button class="mutasi-p" type="button"
+                                title="Pindah Unit">P</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </body>
+    
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('button.mutasi-p').click(function() {
+                $(this).parents('tr').addClass('processed');
+                $('form#mutasi-p').show(500);
+            });
+            
+            $('form#mutasi-p button').click(function() {
+                $(this).parents('form').hide(500);
+                $('table tr.processed').removeClass('processed');
+            });
+        });
+    </script>
 </html>
