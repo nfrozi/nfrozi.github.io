@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rekapitulasi Aset</title>
+        <style>
+            table {
+                border: 1px solid #aaa;
+                font: 10pt sans-serif;
+                border-collapse: collapse;
+            }
+            table td, table th {
+                padding: 4px 8px;
+            }
+            table thead {
+                background: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kolom 1</th>
+                        <th>Kolom 2</th>
+                        <th>Kolom ...</th>
+                        <th>Kolom n</th>
+                        <th>Mutasi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data kolom 1</td>
+                        <td>Data kolom 2</td>
+                        <td>Data kolom ...</td>
+                        <td>Data kolom n</td>
+                        <td style="text-align: center">
+                            <button type="button" title="Rusak - Buang">
+                                R
+                            </button>
+                            <button type="button" title="Jual">
+                                J
+                            </button>
+                            <button type="button" title="Pindah Unit">
+                                P
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
