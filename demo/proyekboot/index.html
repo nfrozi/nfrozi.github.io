@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="author" content="Nanang F. Rozi">
+        <title>Coba Bootstrap</title>
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="libs/jquery-3.1.1.min.js" charset="utf-8"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand taruh samping kiri -->
+                <a class="navbar-brand" href="#">FrozenBoot</a>
+                <!-- Untuk menampilkan toggle button -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"
+                            data-toggle="collapse" data-target="#menu-items">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Untuk item menunya di sini, pakai ul > li > a -->
+                <div class="collapse navbar-collapse" id="menu-items">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#grid">Grid</a></li>
+                        <li><a href="#responsive-table">Table</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Jumbotron: Postingan Keren</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <button type="button" name="button" class="btn btn-success">
+                    Baca lebih lanjut...
+                </button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 id="grid">Coba Grid</h2>
+            <div class="row withbg">
+                <div class="col-md-4 col-sm-12 col-xs-6">
+                    <h3>Isi ke-1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat ratione veritatis. Non, aut eos saepe facilis, consectetur velit dolore nam facere atque fuga neque repellendus minima sunt, dolor corporis?
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-6">
+                    <h3>Isi ke-2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat ratione veritatis. Non, aut eos saepe facilis, consectetur velit dolore nam facere atque fuga neque repellendus minima sunt, dolor corporis?
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-6">
+                    <h3>Isi ke-3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat ratione veritatis. Non, aut eos saepe facilis, consectetur velit dolore nam facere atque fuga neque repellendus minima sunt, dolor corporis?
+                    </p>
+                </div>
+            </div>
+            <h2 id="responsive-table">Coba Responsive Table</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Col 1</th>
+                            <th>Col 2</th>
+                            <th>Col 3</th>
+                            <th>Col 4</th>
+                            <th>Col 5</th>
+                            <th>Col 6</th>
+                            <th>Col 7</th>
+                            <th>Col 8</th>
+                            <th>Col 9</th>
+                            <th>Col 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam minus pariatur aut facere officiis odio perspiciatis neque ipsa adipisci aspernatur quae voluptas maxime enim eum, voluptate id voluptatem voluptatum.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, sed vero quod quo, perspiciatis officiis dolor id! Ipsa, et incidunt delectus nostrum, maxime amet, velit quod praesentium voluptatum beatae eveniet.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aperiam, harum placeat natus rerum numquam. Laborum delectus quis sunt magni, tempora ex, quod et, voluptatum sint aut cum ipsum eius!</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae eius temporibus est inventore illum voluptate nulla repellat neque voluptas culpa explicabo, labore itaque dolores id fugiat, delectus vitae debitis sequi.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero accusamus, molestias reprehenderit, quibusdam quo impedit debitis magni quae voluptate alias necessitatibus in a ea suscipit, libero est. Saepe, est, rem.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis numquam temporibus asperiores, voluptatibus iure optio! Dignissimos, error, eum. Consequatur commodi, eos unde cum cupiditate quasi deleniti, praesentium soluta laborum.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur atque natus a autem sint fugit enim nobis, laudantium perferendis culpa quos laboriosam aut quis ipsa repellendus, praesentium. Magnam, ipsam, culpa.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam porro quibusdam eaque harum facere voluptatem eius. Amet debitis, delectus deleniti, autem accusamus qui consequuntur, repellat quidem quas eligendi quod.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus iusto aliquam quos cupiditate et facere sit ad, reprehenderit accusantium repellat molestias voluptas deserunt sed, perferendis necessitatibus, ratione, culpa reiciendis. Quidem?</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus a maiores nesciunt quisquam aut molestiae magni sit nihil ipsum asperiores, sint eius commodi quibusdam voluptates voluptatibus, nostrum molestias in. Sequi.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam minus pariatur aut facere officiis odio perspiciatis neque ipsa adipisci aspernatur quae voluptas maxime enim eum, voluptate id voluptatem voluptatum.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, sed vero quod quo, perspiciatis officiis dolor id! Ipsa, et incidunt delectus nostrum, maxime amet, velit quod praesentium voluptatum beatae eveniet.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aperiam, harum placeat natus rerum numquam. Laborum delectus quis sunt magni, tempora ex, quod et, voluptatum sint aut cum ipsum eius!</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae eius temporibus est inventore illum voluptate nulla repellat neque voluptas culpa explicabo, labore itaque dolores id fugiat, delectus vitae debitis sequi.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero accusamus, molestias reprehenderit, quibusdam quo impedit debitis magni quae voluptate alias necessitatibus in a ea suscipit, libero est. Saepe, est, rem.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis numquam temporibus asperiores, voluptatibus iure optio! Dignissimos, error, eum. Consequatur commodi, eos unde cum cupiditate quasi deleniti, praesentium soluta laborum.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur atque natus a autem sint fugit enim nobis, laudantium perferendis culpa quos laboriosam aut quis ipsa repellendus, praesentium. Magnam, ipsam, culpa.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam porro quibusdam eaque harum facere voluptatem eius. Amet debitis, delectus deleniti, autem accusamus qui consequuntur, repellat quidem quas eligendi quod.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus iusto aliquam quos cupiditate et facere sit ad, reprehenderit accusantium repellat molestias voluptas deserunt sed, perferendis necessitatibus, ratione, culpa reiciendis. Quidem?</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus a maiores nesciunt quisquam aut molestiae magni sit nihil ipsum asperiores, sint eius commodi quibusdam voluptates voluptatibus, nostrum molestias in. Sequi.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 id="responsive-image">Coba Responsive Image</h2>
+            <caption>
+                Gambar:
+                <a href="http://kursus-seo.com/apa-itu-bootstrap"
+                   class="btn btn-xs btn-danger" title="Klik untuk membuka"
+                   target="_blank">
+                    &copy; Kursus SEO
+                </a>
+            </caption>
+            <img src="assets/images/apa-itu-bootstrap.png" class="img-responsive"
+                 alt="Apa itu Bootstrap">
+
+            <h2 id="icon">Coba Pakai Icon</h2>
+            <button type="button" class="btn btn-primary">
+                <span class="glyphicon glyphicon-plus"></span>
+                Tambah
+            </button>
+        </div>
+
+        <footer class="container-fluid">
+            <h3>
+                Ini Hanya Percobaan
+                <span class="label label-default">#fooTer</span>
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod assumenda quidem itaque soluta, doloremque minus nobis reprehenderit tempora sapiente, sunt enim recusandae repellat hic sint unde molestiae facilis voluptas iusto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aspernatur voluptatem sapiente quisquam aut amet quam placeat iusto rerum vero porro ex nihil, voluptate, illum non laudantium perferendis labore doloremque.
+            </p>
+            <p>
+                <a href="//fb.me/nfrozy" target="_blank">Nanang F. Rozi</a>
+                &middot; 2016
+            </p>
+        </footer>
+    </body>
+</html>

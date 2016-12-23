@@ -1,0 +1,25 @@
+/* My Custom Style */
+.withbg div:nth-child(1) {
+    background: #676E21;
+    color: #FFFFFF;
+}
+.withbg div:nth-child(2) {
+    background: #828B22;
+    color: #F6F7D8;
+}
+.withbg div:nth-child(3) {
+    background: #AEB333;
+    color: #444B01;
+}
+footer {
+    background: #F8F8F8;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.jumbotron {
+    background: #FFFFFF url("../images/itats.jpg") center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px black;
+}
